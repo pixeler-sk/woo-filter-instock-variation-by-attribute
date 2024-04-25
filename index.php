@@ -1,3 +1,4 @@
+<?php
 //hide in posts results
 add_filter( 'posts_results', 'px_posts_results_filter' );
 function px_posts_results_filter( $posts ) {
