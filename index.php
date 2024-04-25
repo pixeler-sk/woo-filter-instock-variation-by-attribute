@@ -13,9 +13,6 @@ function px_posts_results_filter( $posts ) {
 		$attributes[] = $attribute_taxonomy->attribute_name;
 	}
 
-	//admin_var_dump($attributes);
-	//$attributes = [ 'flex', 'uhol', 'velkost', 'farba' ];
-
 	if ( ! is_admin() && ( is_shop() || is_product_category() || is_product_taxonomy() ) ) {
 
 		if ( ! empty( $_GET['stock_status'] ) ) {
